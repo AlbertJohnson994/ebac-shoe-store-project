@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    align-items: center;
+}
+.header {
+    background-color: blue;
+    padding: 20px 0;
+    justify-content: space-between;
+   
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    margin-top: 24px;
+}
+header, footer {
+    background-color: #fff;
+    padding: 20px 0;
+    background-color: blue;
+    border-bottom: 1px solid #ccc;
+}
+header h1 {
+    color: #fff;
+}
+
+
+nav {
+    background-color: blue;
+    color: #fff;
+    padding: 1px 0;
+
+   
+}
+
+nav ul {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    align-items: right;
+    display: flex;
+    gap: 20px;
+ 
+}
+.container h2{
+    color: blue;
+    font-style: italic;
+}
+
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#sobre-a-loja {
+    padding: 50px 0;
+}
+.sobre-a-loja img {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 30px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(125, 125, 236);
+    transform: scale(1.05);
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    border-bottom: 3px solid blue;
+    left: 0;
+}
+
+.list-shoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adicionando espaçamento entre os itens */
+}
+
+.list-shoes li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.list-shoes li > p {
+   font-style: italic;
+   font-size: 12px;
+    margin-bottom: 12px;
+}
+.list-shoes li img {
+    max-width: 100%;
+    display: block; /* Garantir que a imagem seja um bloco */
+}
+
+.list-shoes li h3 {
+    margin: 16px 0;
+    padding: 0px auto;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+   
+   
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer {
+    background-color: rgb(215, 225, 17);
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 600px) { /* Phones */
+    .container, .container-flex {
+        flex-direction: column;
+    }
+    .list-shoes li {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 960px) { /* Tablets */
+    .list-shoes li {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) { /* Laptops */
+    .list-shoes li {
+        max-width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 1201px) { /* Desktops */
+    .container {
+        max-width: 1200px;
+    }
+    .list-shoes li {
+        max-width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1920px) { /* TVs */
+    .container {
+        max-width: 1920px;
+    }
+    .header, header, footer {
+        padding: 30px 0;
+    }
+    nav a {
+        padding: 20px;
+    }
+    .list-shoes li {
+        max-width: 20%;
+    }
+}
